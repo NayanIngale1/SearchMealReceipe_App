@@ -80,3 +80,10 @@ let search = document.getElementById("search");
 search.addEventListener("keyup", () => {
   debounce(getQuery, 500);
 });
+
+
+window.addEventListener("click", (event) => {
+  if (event.target.classNamec != 'form-control') {
+      result.style.display = "none";
+    }
+})
